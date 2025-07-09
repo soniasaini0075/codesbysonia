@@ -1,0 +1,81 @@
+.client-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+  background-image: url('/assets/images/Bg-Principles.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0 140px 0;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  gap: 4rem;
+}
+
+.image-group {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.scroll-logo {
+  height: 150px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.scroll-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+.title__ {
+  position: relative;
+  text-align: center;
+  .brownist-text {
+    color: var(--green);
+    font-size: 2rem;
+  }
+  .main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .label-arrow {
+    position: absolute;
+    left: 200px;
+    top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

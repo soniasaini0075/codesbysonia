@@ -1,0 +1,14 @@
+.shiny-custom-class {
+	font-size: 4rem;
+	font-weight: 900;
+	font-family: "Poppins", sans-serif;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: "";
+		background: rgba(var(--text-color), 0.6);
+		height: 100%;
+		width: 100%;
+		inset: 0;
+	}
+}
