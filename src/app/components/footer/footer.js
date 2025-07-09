@@ -22,12 +22,11 @@ const Footer = () => {
           <div className={styles.footer__main}>
             <div className={styles.footer__heading}>
               <h2 className={styles.footer__title}>
-                Why Settle for Ordinary?
-                <span className={styles.icon} data-icon="star">
+                Why Settle for <span className={styles.icon} data-icon="star">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
                   </svg>
-                </span>
+                </span> Ordinary?
               </h2>
               <h3 className={styles.footer__subtitle}>
                 Let's build something groundbreaking that users love!
@@ -81,8 +80,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Bottom Bar */}
+        {/* Bottom Bar */}
           <div className={styles.footer__bottom}>
             <div className={styles.footer__copyright}>
               <p>© Copyright 2024. Sonia Saini. All rights reserved.</p>
@@ -90,20 +90,20 @@ const Footer = () => {
             <div className={styles.footer__social}>
               <span className={styles.social_label}>Connect</span>
               <div className={styles.social_links}>
-                <a href="#" className={styles.social_link}>
+                <a href="https://www.linkedin.com/in/thesonia07/" className={styles.social_link}>
                   LinkedIn
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                     <path d="M7 17l9.2-9.2M17 17V7H7" stroke="currentColor" strokeWidth="2"/>
                   </svg>
                 </a>
-                <a href="#" className={styles.social_link}>
+                <a href="https://medium.com/@thesonia07" className={styles.social_link}>
                   Medium
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                     <path d="M7 17l9.2-9.2M17 17V7H7" stroke="currentColor" strokeWidth="2"/>
                   </svg>
                 </a>
-                <a href="#" className={styles.social_link}>
-                  Behance
+                <a href="https://github.com/soniasaini0075/codesbysonia" className={styles.social_link}>
+                  Github
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                     <path d="M7 17l9.2-9.2M17 17V7H7" stroke="currentColor" strokeWidth="2"/>
                   </svg>
@@ -112,7 +112,6 @@ const Footer = () => {
             </div>
           </div>
 
-        </div>
       </div>
     </footer>
   );

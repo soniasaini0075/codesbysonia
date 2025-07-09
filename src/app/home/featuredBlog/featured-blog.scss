@@ -11,11 +11,87 @@ $background-white: #f8f9fa;
 }
 
 .featured-blogs-wrap {
-  padding: 80px 0;
+  padding: 80px 0 120px 0;
   background: $white;
   
   @include phone {
     padding: 48px 0;
+  }
+
+  .heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* From Uiverse.io by satyamchaudharydev */ 
+    .readmore-bbtn {
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .readmore-bbtn {
+      --primary-color: var(--text-color);
+      --hovered-color: var(--blue);
+      position: relative;
+      display: flex;
+      font-weight: 600;
+      font-size: 20px;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .readmore-bbtn p {
+      margin: 0;
+      position: relative;
+      font-size: 20px;
+      color: var(--primary-color);
+    }
+
+    .readmore-bbtn::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      left: 0;
+      bottom: -7px;
+      background: var(--hovered-color);
+      height: 2px;
+      transition: 0.3s ease-out;
+    }
+
+    .readmore-bbtn p::before {
+      position: absolute;
+      /*   box-sizing: border-box; */
+      content: "Read More";
+      width: 0%;
+      inset: 0;
+      color: var(--hovered-color);
+      overflow: hidden;
+      transition: 0.3s ease-out;
+    }
+
+    .readmore-bbtn:hover::after {
+      width: 100%;
+    }
+
+    .readmore-bbtn:hover p::before {
+      width: 100%;
+    }
+
+    .readmore-bbtn:hover svg {
+      transform: translateX(4px);
+      color: var(--hovered-color);
+    }
+
+    .readmore-bbtn svg {
+      color: var(--primary-color);
+      transition: 0.2s;
+      position: relative;
+      width: 15px;
+      transition-delay: 0.2s;
+    }
+
   }
   
   .container {
@@ -39,7 +115,7 @@ $background-white: #f8f9fa;
     
     .featured-blogs-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       align-items: flex-start;
       grid-column-gap: 40px;
       
@@ -92,7 +168,6 @@ $background-white: #f8f9fa;
               font-weight: 500;
               text-transform: uppercase;
               letter-spacing: 0.5px;
-              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
               display: inline-block;
               color: $black;
               width: fit-content;
