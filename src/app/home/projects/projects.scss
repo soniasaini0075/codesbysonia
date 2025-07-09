@@ -24,8 +24,9 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
 }
 
+.main-wrapper-projects-page {
 // Main container
-.investment-project {
+&.investment-project {
   background-color: $dark-bg;
   min-height: 100vh;
   padding: 80px 0 140px 0;
@@ -36,12 +37,19 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   .title__ {
     text-align: left;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 24px;
     .label-arrow {
       left: 0;
     }
     .main-title {
       text-align: left;
+      small {
+        display: block;
+        color: var(--green);
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -50,7 +58,7 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   @media (max-width: 1024px) {}
   .card-wrapper {
     .card {
-      display: flex;
+      display: grid;
       width: 100%;
       background: #242426;
       border-radius: 24px;
@@ -58,6 +66,8 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       padding: 40px;
       gap: 40px;
       margin-bottom: 40px;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
       figure {
         img {
           width: 100%;
@@ -79,7 +89,7 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
 
 // Content Section
-.content-section {
+.project-content-section {
   color: $text-white;
   
   @media (max-width: 1024px) {
@@ -163,6 +173,22 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
+.project__cta {
+  .button-wrapper {
+    .learn-more {
+      .circle {
+        background: #fff;
+      }
+      .button-text {
+        color: #fff;
+      }
+      &:hover .button-text {
+        color: var(--text-color);
+      }
+    }
+  }
+}
+
 // Animations
 @keyframes fadeIn {
   from {
@@ -175,10 +201,11 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
-.content-section > * {
+.project-content-section > * {
   animation: fadeIn 0.6s ease forwards;
 }
 
 .phone-mockup {
   animation: fadeIn 0.8s ease forwards;
+}
 }

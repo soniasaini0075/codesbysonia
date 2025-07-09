@@ -50,7 +50,7 @@ const VelocityImageScroller = ({
     velocityMapping.input,
     velocityMapping.output,
     { clamp: false }
-  );
+    );
 
   const copyRef = useRef(null);
   const copyWidth = useElementWidth(copyRef);
@@ -73,9 +73,9 @@ const VelocityImageScroller = ({
       <div className="image-group" key={i} ref={i === 0 ? copyRef : null}>
         {images.slice(0, 5).map((src, idx) => (
           <img src={src} key={idx} className={`scroll-logo ${className}`} alt={`logo-${idx}`} />
-        ))}
+          ))}
       </div>
-    );
+      );
   }
 
   return (
@@ -84,19 +84,22 @@ const VelocityImageScroller = ({
         {imageGroups}
       </motion.div>
     </div>
-  );
+    );
 };
 
 const ScrollVelocity = ({ scrollContainerRef }) => {
   const logos = [
-    '/assets/images/clients/lpu-sae-india-collegiate-club-logo-png_seeklogo-345773.png',
-    '/assets/images/clients/century-ply.webp',
-    '/assets/images/clients/INDIAai_Logo.svg.png',
-    '/assets/images/clients/jaquar-lighting-logo.png',
-    '/assets/images/clients/Kotak_Mahindra_Bank_logo.png',
-    '/assets/images/clients/MyMoneyMantra_Logo.jpg',
-    '/assets/images/clients/nbt.png',
-    '/assets/images/clients/rbl-bank.png',
+    '/assets/images/clients/1.png',
+    '/assets/images/clients/2.png',
+    '/assets/images/clients/3.png',
+    '/assets/images/clients/4.png',
+    '/assets/images/clients/5.png',
+    '/assets/images/clients/6.png',
+    '/assets/images/clients/7.png',
+    '/assets/images/clients/8.png',
+    '/assets/images/clients/9.png',
+    '/assets/images/clients/10.png',
+    '/assets/images/clients/11.png',
   ];
 
   return (
@@ -107,7 +110,10 @@ const ScrollVelocity = ({ scrollContainerRef }) => {
             <img src="/assets/images/icons/arrow-down.svg" alt="Arrow" />
           </div>
           <SplittingText className="brownist-text" text="Clients" />
-          <h2 className="main-title"><span className="product-text">Notable Brands</span><br/><span className="designer-text">I’ve Worked With</span></h2>
+          <h2 className="main-title">
+            <span className="product-text" style={{ display: 'block' }}>Notable Brands</span>
+            <span className="designer-text" style={{ display: 'block' }}>I’ve Worked With</span>
+          </h2>
         </div>
       </div>
       {/* Top row */}
@@ -127,7 +133,7 @@ const ScrollVelocity = ({ scrollContainerRef }) => {
         numCopies={3}
       />
     </section>
-  );
+    );
 };
 
 export default ScrollVelocity;

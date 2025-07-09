@@ -17,11 +17,13 @@
     "motion": "^12.23.0",
     "next": "15.3.5",
     "ogl": "^1.0.11",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.89.2",
     "splitting": "^1.1.0",
     "styled-components": "^6.1.19",
+    "swiper": "^11.2.10",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

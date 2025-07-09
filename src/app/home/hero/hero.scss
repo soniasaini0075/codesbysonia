@@ -2,7 +2,6 @@
 $primary-blue: #2563eb;
 $secondary-purple: #c4b5fd;
 $accent-teal: #2dd4bf;
-$text-gray: #4b5563;
 $text-light-gray: #6b7280;
 $background-purple: #f3e8ff;
 $background-blue: #eff6ff;
@@ -23,7 +22,7 @@ $background-blue: #eff6ff;
   min-height: 100vh;
   @include gradient-background;
   @include flex-center;
-  padding: 9rem 0 12rem;
+  padding: 10rem 0 9rem;
   
   @media (max-width: 768px) {
     padding: 1rem;
@@ -35,7 +34,6 @@ $background-blue: #eff6ff;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
   align-items: center;
   
   @media (max-width: 1024px) {
@@ -51,7 +49,7 @@ $background-blue: #eff6ff;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  max-width: 400px;
+  max-width: 80%;
   padding: 1.5rem 1.25rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -76,8 +74,8 @@ $background-blue: #eff6ff;
 }
 
 .profile-image {
-  width: 320px;
-  height: 384px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(180deg, #ddd6fe 0%, #c4b5fd 100%);
   border-radius: 1rem;
   overflow: hidden;
@@ -137,7 +135,7 @@ $background-blue: #eff6ff;
 }
 
 .quote-text {
-  color: $text-gray;
+  color: var(--text-color);
   font-size: 1.125rem;
   line-height: 1.6;
   margin: 0;
@@ -200,18 +198,20 @@ $background-blue: #eff6ff;
   letter-spacing: 0.05em;
 }
 
-.main-title {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0;
-  
-  @media (max-width: 768px) {
-    font-size: 3rem;
-  }
-  
-  @media (max-width: 480px) {
-    font-size: 2.5rem;
+.hero-content {
+  .main-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -224,7 +224,7 @@ $background-blue: #eff6ff;
 }
 
 .description {
-  color: $text-gray;
+  color: var(--text-color);
   font-size: 1.125rem;
   line-height: 1.6;
   max-width: 28rem;
@@ -244,10 +244,6 @@ $background-blue: #eff6ff;
   @media (max-width: 768px) {
     gap: 1.5rem;
   }
-}
-
-.stat-item {
-  text-align: center;
 }
 
 .stat-number {

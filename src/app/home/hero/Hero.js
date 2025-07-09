@@ -50,11 +50,11 @@ const HeroPage = () => {
               {/*<span className="label-text">Innovative</span>*/}
               <SplittingText className="brownist-text" text="React Js" />
             </div>
-            <h2 className="main-title">
+            <h1 className="main-title">
               <span className="product-text">Frontend</span>
               <br />
               <span className="designer-text">Developer</span>
-            </h2>
+            </h1>
           </div>
 
           {/* Description */}

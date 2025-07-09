@@ -8,6 +8,7 @@
 
 .brownist-text {
   font-family: 'Brownist', sans-serif;
+  font-weight: 100 !important;
 }
 
 
@@ -71,6 +72,10 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
 }
 
 a {
