@@ -24,9 +24,11 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
 }
 
-.main-wrapper-projects-page {
-  &.investment-project {
-    background-color: $dark-bg;
+section {
+  &.project-listing {
+    .main-wrapper-projects-page {
+
+      background-color: $dark-bg;
     // background-image: url('/assets/images/snapshots-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,40 +60,40 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       color: #fff;
       margin-bottom: 40px;
     }
-  }
 
-  .project-container {  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
-    gap: 16px;
-    @media (max-width: 1024px) {}
-    .card-wrapper {
-      .card {
-        display: grid;
-        width: 100%;
-        background: #242426;
-        border-radius: 24px;
-        border: 1px solid transparent;
-        padding: 16px;
-        grid-gap: 40px;
-        gap: 24px;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        figure {
-          img {
-            width: 100%;
-            height: 242px;
-            border-radius: 12px;
+
+    .project-container {  
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: flex-start;
+      gap: 16px;
+      @media (max-width: 1024px) {}
+      .card-wrapper {
+        .card {
+          display: grid;
+          width: 100%;
+          background: #242426;
+          border-radius: 24px;
+          border: 1px solid transparent;
+          padding: 16px;
+          grid-gap: 40px;
+          gap: 24px;
+          grid-template-columns: repeat(1, 1fr);
+          align-items: center;
+          figure {
+            img {
+              width: 100%;
+              height: 242px;
+              border-radius: 12px;
+            }
           }
-        }
-        &:hover {
-          box-shadow: 0 0 10px rgba(255,255,255,0.2);
-          border: 1px solid rgba(255,255,255,0.2);
+          &:hover {
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.2);
+          }
         }
       }
     }
-  }
 
 // Phone Section
 .phone-section {
@@ -219,5 +221,7 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
 .phone-mockup {
   animation: fadeIn 0.8s ease forwards;
+}
+}
 }
 }

@@ -85,57 +85,59 @@ const projectData = [
 
 const Work = () => {
   return (
-    <div className="investment-project main-wrapper-projects-page">
-      <div className="container">
-        <div className="title__">
-          <h2 className="main-title">
-            <small><SplittingText className="brownist-text" text="From Idea to Execution" /></small>
-            Bridging Design & Development with Precision
-          </h2>
+    <section className="project-listing">
+      <div className="main-projects main-wrapper-projects-page">
+        <div className="container">
+          <div className="title__">
+            <h2 className="main-title">
+              <small><SplittingText className="brownist-text" text="From Idea to Execution" /></small>
+              Bridging Design & Development with Precision
+            </h2>
+          </div>
+          <p className="p-desc">Each project you see here is a result of close collaboration, clean architecture, and a deep respect for both design aesthetics and frontend engineering. Scroll through to explore the interfaces I’ve crafted — where every pixel and interaction is intentional</p>
         </div>
-        <p className="p-desc">Each project you see here is a result of close collaboration, clean architecture, and a deep respect for both design aesthetics and frontend engineering. Scroll through to explore the interfaces I’ve crafted — where every pixel and interaction is intentional</p>
-      </div>
 
-      <div className="project-container container parent">
-        {projectData.map((project) => (
-          <div className="card-wrapper" key={project.id}>
-            <SpotlightCard
-              className="custom-spotlight-card card"
-              spotlightColor={project.spotlightColor}
-            >
-              <div className="phone-section">
-                <figure>
-                  <img
-                    src={`/assets/images/projects/${project.id}.png`}
-                    alt={project.title}
-                  />
-                </figure>
-              </div>
-
-              <div className="project-content-section">
-                <h1 className="main-title">
-                  <span className="brand-subtitle">{project.subtitle}</span>
-                  {project.title}
-                </h1>
-                <p className="description">{project.description}</p>
-
-                <div className="tags">
-                  {project.tags.map((tag, index) => (
-                    <span className="tag" key={index}>{tag}</span>
-                  ))}
+        <div className="project-container container parent">
+          {projectData.map((project) => (
+            <div className="card-wrapper" key={project.id}>
+              <SpotlightCard
+                className="custom-spotlight-card card"
+                spotlightColor={project.spotlightColor}
+              >
+                <div className="phone-section">
+                  <figure>
+                    <img
+                      src={`/assets/images/projects/${project.id}.png`}
+                      alt={project.title}
+                    />
+                  </figure>
                 </div>
 
-                <div className="project__cta">
-                <Button text="View Project" href={project.weblink} isExternal />
+                <div className="project-content-section">
+                  <h1 className="main-title">
+                    <span className="brand-subtitle">{project.subtitle}</span>
+                    {project.title}
+                  </h1>
+                  <p className="description">{project.description}</p>
 
-              </div>
-              </div>
-            </SpotlightCard>
-          </div>
-        ))}
+                  <div className="tags">
+                    {project.tags.map((tag, index) => (
+                      <span className="tag" key={index}>{tag}</span>
+                      ))}
+                  </div>
+
+                  <div className="project__cta">
+                    <Button text="View Project" href={project.weblink} isExternal />
+
+                  </div>
+                </div>
+              </SpotlightCard>
+            </div>
+            ))}
+        </div>
       </div>
-    </div>
-  );
+    </section>
+    );
 };
 
 export default Work;
