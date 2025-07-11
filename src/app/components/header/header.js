@@ -34,27 +34,29 @@ const Header = () => {
             <Link
               href="/"
               className={`${styles.nav__link} ${isActive('/') ? styles['nav__link--active'] : ''}`}>Home</Link>
-          </li>
-          <li className={styles.nav__item}>
-            <Link href="/about" className={`${styles.nav__link} ${isActive('/about') ? styles['nav__link--active'] : ''}`}>About</Link>
-          </li>
-          <li className={styles.nav__item}>
-            <Link href="/projects" className={`${styles.nav__link} ${isActive('/projects') ? styles['nav__link--active'] : ''}`}>Projects</Link>
-          </li>
-          <li className={styles.nav__item}>
-            <a href="#contact" className={styles.nav__link}>Let's talk</a>
-          </li>
-        </ul>
-      </nav>
+            </li>
+            <li className={styles.nav__item}>
+              <Link href="/about" className={`${styles.nav__link} ${isActive('/about') ? styles['nav__link--active'] : ''}`}>About</Link>
+            </li>
+            <li className={styles.nav__item}>
+              <Link href="/projects" className={`${styles.nav__link} ${isActive('/projects') ? styles['nav__link--active'] : ''}`}>Projects</Link>
+            </li>
+            <li className={styles.nav__item}>
+              <a href="#contact" className={styles.nav__link}>Let's talk</a>
+            </li>
+          </ul>
+        </nav>
 
 
         {/* CTA Button */}
-      <div className={styles.header__cta}>
-        <Button text="Get my Resume" />
+        <div className={styles.header__cta}>
+          <a href="/assets/images/files/resume-Sonia-Developer-9891924288.pdf" target="_blank" rel="noopener noreferrer">
+            <Button text="Get my Resume" />
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
-  );
+    </header>
+    );
 };
 
 export default Header;

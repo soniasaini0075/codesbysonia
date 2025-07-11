@@ -1,0 +1,77 @@
+.showcase {
+  position: relative;
+  background: #f3f0ff;
+  padding: 9rem 0 0 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &__carousel {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+
+    .swiper-slide {
+      width: 260px; // ✅ Fixed width required for Swiper loop with auto
+      flex-shrink: 0; // ✅ Prevent resizing
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      height: 200px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: left;
+
+      h4 {
+        color: #1873f2;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        white-space: pre-line;
+        color: #333;
+        font-size: 0.9rem;
+      }
+
+      small {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: italic;
+        color: #0056b3;
+      }
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    &__carousel {
+      .swiper-slide {
+        width: 220px; // ✅ Also fix on mobile
+      }
+    }
+
+    &__phone {
+      max-width: 260px;
+    }
+  }
+}
