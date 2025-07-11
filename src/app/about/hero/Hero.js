@@ -11,30 +11,30 @@ const cards = [
   {
     id: 1,
     title: 'I believe in...',
-    content: 'Continuous learning\nIterating and refining via user feedback',
-    quote: '-Through Research',
+    content: 'Clean code\nIterating with real user feedback',
+    quote: '-Built Through Testing',
   },
   {
     id: 2,
-    title: 'Designs should look like',
-    content: 'inviting\nunforgettable\nfunctional',
+    title: 'Frontend should feel',
+    content: 'intuitive\naccessible\nengaging',
   },
   {
     id: 3,
-    title: 'Favorite areas to work in…',
-    content: 'Education, B2B, e-Commerce, Healthcare, Agritech, Travel',
+    title: 'I love building for...',
+    content: 'Education, e-Commerce, SaaS, Healthtech, B2B Tools, Travel',
   },
   {
     id: 4,
-    title: 'I strive to live by the mantra',
-    content: 'YES WE CAN\nNOW WE HAVE TO!',
+    title: 'The mindset I code with',
+    content: 'Progressive enhancement\nUser-first thinking!',
   },
   {
     id: 5,
-    title: '“Design is a process…”',
-    content: 'based on empathy and testing',
-    quote: '-Erika Hall',
-  },
+    title: '“Frontend is a craft…”',
+    content: 'shaped by empathy and micro-interactions',
+    quote: '-Me, every day',
+  }
 ];
 
 const Hero = () => {

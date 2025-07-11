@@ -1,0 +1,223 @@
+// Variables
+$dark-bg: #1a1a1a;
+$card-bg: #2a2a2a;
+$text-white: #ffffff;
+$text-gray: #a0a0a0;
+$accent-orange: #ff8c42;
+$accent-green: #4ade80;
+$accent-red: #ef4444;
+$accent-blue: #3b82f6;
+$phone-bg: #f8f9fa;
+$border-radius: 12px;
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-wrapper-projects-page {
+  &.investment-project {
+    background-color: $dark-bg;
+    // background-image: url('/assets/images/snapshots-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 80px 0 140px 0;
+
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+    .title__ {
+      text-align: left;
+      color: #fff;
+      display: flex;
+      gap: 24px;
+      .label-arrow {
+        left: 0;
+      }
+      .main-title {
+        text-align: left;
+        small {
+          display: block;
+          color: var(--green);
+          font-size: 2rem;
+        }
+      }
+    }
+    .p-desc {
+      color: #fff;
+      margin-bottom: 40px;
+    }
+  }
+
+  .project-container {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    gap: 16px;
+    @media (max-width: 1024px) {}
+    .card-wrapper {
+      .card {
+        display: grid;
+        width: 100%;
+        background: #242426;
+        border-radius: 24px;
+        border: 1px solid transparent;
+        padding: 16px;
+        grid-gap: 40px;
+        gap: 24px;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        figure {
+          img {
+            width: 100%;
+            height: 242px;
+            border-radius: 12px;
+          }
+        }
+        &:hover {
+          box-shadow: 0 0 10px rgba(255,255,255,0.2);
+          border: 1px solid rgba(255,255,255,0.2);
+        }
+      }
+    }
+  }
+
+// Phone Section
+.phone-section {
+  @include flex-center;
+  position: relative;
+}
+
+
+// Content Section
+.project-content-section {
+  color: $text-white;
+  
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
+}
+
+.main-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 8px;
+  min-height: 60px;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  .brand-subtitle {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    color: rgba(#fff, 0.6);
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: $text-gray;
+  margin-bottom: 16px;
+  max-width: 500px;
+  min-height: 130px;
+  @media (max-width: 1024px) {
+    max-width: none;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: $text-gray;
+}
+
+.view-project {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+}
+
+.arrow {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+  
+  .view-project:hover & {
+    transform: translateX(5px);
+  }
+}
+
+.project__cta {
+  .button-wrapper {
+    .learn-more {
+      .circle {
+        background: #fff;
+      }
+      .button-text {
+        color: #fff;
+      }
+      &:hover .button-text {
+        color: var(--text-color);
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-content-section > * {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.phone-mockup {
+  animation: fadeIn 0.8s ease forwards;
+}
+}

@@ -7,20 +7,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-
-    .scribble {
-      display: block;
-      font-family: 'Pacifico', cursive;
-      font-size: 1.2rem;
-      color: #14d4c3;
+  .heading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    h3 {
+      font-size: 2rem;
+      span {
+        display: block;
+      }
+      .brownist-text {
+        color: #14d4c3;
+        font-size: 2rem;
+      }
     }
-
-    .title {
-      font-weight: 700;
-      color: #14d4c3;
+    img {
+      margin-top: -40px;
     }
   }
 

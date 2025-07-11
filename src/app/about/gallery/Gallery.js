@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import { SplittingText } from '@/components/animate-ui/text/splitting';
+
 import './gallery.scss';
 
 const images = [
@@ -57,15 +59,24 @@ const images = [
 const Gallery = () => {
   return (
     <div className="snapshots">
+      <div className="container">
+        <div className="heading-wrapper">
+          <img src="/assets/images/icons/doodle-arrow.svg" alt="arrow" className="arrow" />
+          <h3>
+            <SplittingText className="brownist-text" text="Snapshots" />
+            <span className="product-text">Moments Behind the Magic</span>
+          </h3>
+        </div>
+      </div>
       <div className="parent">
         {images.map((item, index) => (
           <div key={index} className={`snapshots__photo  ${item.gridClass}`}>
             <img src={item.src} alt={item.alt} />
           </div>
-        ))}
+          ))}
       </div>
     </div>
-  );
+    );
 };
 
 export default Gallery;

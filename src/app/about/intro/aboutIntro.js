@@ -32,9 +32,9 @@ const AboutIntro = () => {
       <div className="intro-text container">
         <div className="social">
           <h2>
-            Every Interaction Engineered for <span className="blue italic">Clarity</span>,<br />
+            Every <span className="blue italic">Interaction</span> Engineered for Clarity,<br />
             Every Journey Built for <span className="blue italic">Users</span>,<br />
-            Users <span className="blue italic">Always come first</span> for me!
+            Clean, Intuitive, <span className="blue italic">Accessible</span>
           </h2>
           <span>Follow me on:</span>
           <a href="https://www.linkedin.com/in/thesonia07/" target="_blank" rel="noreferrer">Linkedin ↗</a>

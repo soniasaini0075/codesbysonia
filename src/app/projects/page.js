@@ -1,32 +1,13 @@
 'use client';
 
-import ShinyText from '../widgets/ShinyText/ShinyText';
-import LetterGlitch from '../widgets/LetterGlitch/LetterGlitch';
+import Hero from './hero/Hero';
+import Work from './work/Work';
 
-import './projects.scss';
-
-export default function Project() {
+export default function Projects() {
   return (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
-      <LetterGlitch
-        glitchSpeed={50}
-        centerVignette={true}
-        outerVignette={false}
-        smooth={true}
-      />
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 1,
-      }}>
-        <ShinyText text="Projects" disabled={false} speed={3} className='shiny-custom-class' />
-      </div>
+    <div>
+      <Hero />
+      <Work />
     </div>
   );
 }
