@@ -14,7 +14,7 @@ const projectData = [
     weblink: "https://onething.design/",
     subtitle: 'Leading Global UI UX Design Agency',
     title: 'Onething Design Studio',
-    description: 'global UI UX design agency building innovative user experiences to scale up growth for businesses.',
+    description: 'Global UI UX design agency building innovative user experiences to scale up growth for businesses.',
     tags: ['#UIUXAgency', '#DesignStudio', '#CompanyPortfolio'],
     spotlightColor: 'rgba(233, 16, 16, 0.2)',
   },
@@ -80,6 +80,15 @@ const projectData = [
     description: 'Choose your favorite photos, customize your frames, and let Pholio do the rest. Print, frame, and share meaningful moments — beautifully.',
     tags: ['#Frames', '#PhotoTiles', '#Memories'],
     spotlightColor: 'rgba(242, 97, 24, 0.2)',
+  },
+  {
+    id: 'project8',
+    weblink: "https://onething-2020.netlify.app/",
+    subtitle: 'Leading Global UI UX Design Agency',
+    title: 'Onething 2020',
+    description: 'Global UI UX design agency building innovative user experiences to scale up growth for businesses.',
+    tags: ['#UIUXAgency', '#DesignStudio', '#CompanyPortfolio'],
+    spotlightColor: 'rgba(233, 16, 16, 0.2)',
   }
 ];
 

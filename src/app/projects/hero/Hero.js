@@ -7,7 +7,7 @@ import './hero.scss';
 
 export default function Project() {
   return (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
+    <div style={{ width: '100%', height: '60vh', position: 'relative' }}>
       <LetterGlitch
         glitchSpeed={50}
         centerVignette={true}
