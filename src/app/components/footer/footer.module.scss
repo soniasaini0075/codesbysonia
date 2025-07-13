@@ -28,6 +28,9 @@
       gap: 2rem;
       text-align: center;
     }
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__main {
@@ -99,6 +102,9 @@
     font-size: 1.1rem;
     color: #4a5568;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__bottom {
@@ -113,6 +119,8 @@
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
+      padding-top: 1rem;
+      align-items: flex-start;
     }
   }
 
@@ -140,6 +148,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -244,6 +255,9 @@
   color: #718096;
   font-weight: 500;
   font-size: 0.9rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .social_links {

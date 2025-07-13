@@ -22,6 +22,9 @@
     .social {
       margin: 1rem 0 2rem;
       font-size: 0.95rem;
+      @media (max-width: 768px) {
+        margin: 0 0 2rem;
+      }
       span {
         font-weight: bold;
       }
@@ -69,7 +72,9 @@
       gap: 2rem;
       flex-wrap: wrap;
       margin-top: 2rem;
-
+      @media (max-width: 768px) {
+        gap: 1rem;
+      }
       .skill {
         flex: 1 1 260px;
         padding: 24px;
