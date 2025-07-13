@@ -34,12 +34,18 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @media (max-width: 768px) {
+      gap: 1rem;
+    }
   }
 
   &__heading {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    // @media (max-width: 768px) {
+    //   display: none;
+    // }
   }
 
   &__title,
@@ -52,6 +58,10 @@
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+      text-align: left;
+      gap: 0;
+    }
   }
 
   &__title { font-size: 3rem; }
@@ -76,8 +86,9 @@
     gap: 1.5rem;
     align-items: flex-start;
 
-    @media (max-width: 1024px) {
-      align-items: center;
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      gap: 1rem;
     }
   }
 
