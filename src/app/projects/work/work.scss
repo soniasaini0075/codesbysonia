@@ -27,9 +27,7 @@ $shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 section {
   &.project-listing {
     .main-wrapper-projects-page {
-
-      background-color: $dark-bg;
-    // background-image: url('/assets/images/snapshots-bg.png');
+    background-color: $dark-bg;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +35,7 @@ section {
     padding: 80px 0 140px 0;
 
     @media (max-width: 768px) {
-      padding: 1rem;
+      padding: 4rem 1rem;
     }
     .title__ {
       text-align: left;
@@ -49,10 +47,16 @@ section {
       }
       .main-title {
         text-align: left;
+        @media (max-width: 768px) {
+          margin-bottom: 1rem;
+        }
         small {
           display: block;
           color: var(--green);
           font-size: 2rem;
+          @media (max-width: 768px) {
+            margin-bottom: 1rem;
+          }
         }
       }
     }
@@ -68,6 +72,10 @@ section {
       align-items: flex-start;
       gap: 16px;
       @media (max-width: 1024px) {}
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+      }
       .card-wrapper {
         .card {
           display: grid;
@@ -119,6 +127,7 @@ section {
   min-height: 60px;
   @media (max-width: 768px) {
     font-size: 2rem;
+    text-align: left;
   }
   .brand-subtitle {
     display: block;
@@ -139,6 +148,9 @@ section {
   @media (max-width: 1024px) {
     max-width: none;
   }
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 .tags {
@@ -149,6 +161,9 @@ section {
   
   @media (max-width: 1024px) {
     justify-content: center;
+  }
+  @media (max-width: 768px) {
+    justify-content: flex-start;
   }
 }
 
@@ -188,6 +203,9 @@ section {
 }
 
 .project__cta {
+  @media (max-width: 768px) {
+    text-align: left;
+  }
   .button-wrapper {
     .learn-more {
       .circle {

@@ -37,10 +37,10 @@ const Header = () => {
                 className={`${styles.nav__link} ${isActive('/') ? styles['nav__link--active'] : ''}`}>Home</Link>
             </li>
             <li className={styles.nav__item}>
-              <Link href="/about" className={`${styles.nav__link} ${isActive('/about') ? styles['nav__link--active'] : ''}`}>About</Link>
+              <Link href="/projects" className={`${styles.nav__link} ${isActive('/projects') ? styles['nav__link--active'] : ''}`}>Projects</Link>
             </li>
             <li className={styles.nav__item}>
-              <Link href="/projects" className={`${styles.nav__link} ${isActive('/projects') ? styles['nav__link--active'] : ''}`}>Projects</Link>
+              <Link href="/about" className={`${styles.nav__link} ${isActive('/about') ? styles['nav__link--active'] : ''}`}>About</Link>
             </li>
             <li className={styles.nav__item}>
               <Link href="/contact" className={`${styles.nav__link} ${isActive('/contact') ? styles['nav__link--active'] : ''}`}>Let's talk</Link>
@@ -60,8 +60,8 @@ const Header = () => {
           <div className={styles.mobileMenu}>
             <ul>
               <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-              <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
               <li><Link href="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+              <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
               <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Let's talk</Link></li>
               <li><a href="/assets/images/files/resume-Sonia-Developer-9891924288.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Get my Resume</a></li>
             </ul>
