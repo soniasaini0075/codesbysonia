@@ -28,7 +28,7 @@ export default function Contact() {
         <div className="container">
           <div className="profile-section">
             <div className="profile-image">
-              <img src="/assets/images/hero-sonia.png" alt="Sonia Saini" />
+              <img src="/assets/images/avatars/hehe-bg.png" alt="Sonia Saini" />
             </div>
           </div>
 
