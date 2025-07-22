@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Button from '../app/widgets/buttons/Button';
 
+// Test
 test("calls handler on click", () => {
   const handleClick = jest.fn();
   render(<Button onClick={handleClick} />);
